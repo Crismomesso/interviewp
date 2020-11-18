@@ -35,7 +35,8 @@ public class TransactionsController {
     @ApiOperation(value = "Insert transaction")
     @ResponseStatus(HttpStatus.CREATED)
     @ResponseBody
-    public void create(@RequestBody TransactionDTO dto) throws ConstraintsViolationException {
+    public void create(@RequestBody TransactionDTO dto) throws Exception {
         service.create(dto);
     }
+
 }

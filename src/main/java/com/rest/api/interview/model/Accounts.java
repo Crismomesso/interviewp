@@ -27,4 +27,7 @@ public class Accounts {
     @NotNull
     @NotBlank
     private String documentNumber;
+
+    @NotNull
+    private double availableCreditLimit;
 }

@@ -30,16 +30,16 @@ public class AccountsController {
     }
 
     
-    /** 
+    /**
      * @param dto
      * @return AccountDTO
-     * @throws ConstraintsViolationException
+     * @throws Exception
      */
     @PostMapping
     @ApiOperation(value = "Insert account")
     @ResponseStatus(HttpStatus.CREATED)
     @ResponseBody
-    public AccountDTO create(@RequestBody AccountDTO dto) throws ConstraintsViolationException {
+    public AccountDTO create(@RequestBody AccountDTO dto) throws Exception {
         return accountsServices.create(dto);
     }
 

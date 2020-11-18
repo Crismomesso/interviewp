@@ -2,6 +2,7 @@ package com.rest.api.interview.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.rest.api.interview.config.AmountDeserializer;
 import com.rest.api.interview.config.CustomEnumDeserializer;
 import com.rest.api.interview.enums.OperationEnum;
 

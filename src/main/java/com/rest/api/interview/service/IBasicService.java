@@ -11,7 +11,7 @@ import com.rest.api.interview.exception.InternalServerErrorExeption;
  */
 public interface IBasicService<T> {
     Collection<T> get(int page, int size);
-    T create(T obj) throws ConstraintsViolationException;
+    T create(T obj) throws Exception;
     T findById(Long id) throws EntityNotFoundException;
     void deleteById(Long id) throws InternalServerErrorExeption;
     T alter(long id, T clientDto) throws ConstraintsViolationException, EntityNotFoundException;

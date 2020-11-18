@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class AccountDTO {
-    
+
     @JsonProperty("account_id")
     private Long accountId;
 

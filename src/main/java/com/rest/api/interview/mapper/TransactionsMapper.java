@@ -18,13 +18,13 @@ public final class TransactionsMapper {
 
     public static Transactions convertToEntity(TransactionDTO dto) {
         final Transactions entity = new Transactions();
-        final Accounts account = new Accounts();
+        // final Accounts account = new Accounts();
         final OperationsTypes op = new OperationsTypes();
 
         entity.setEventDate(LocalDate.now());
         entity.setAmount(dto.getAmount());
-        account.setAccountId(dto.getAccountId());
-        entity.setAccountId(account);
+        // account.setAccountId(dto.getAccountId());
+        // entity.setAccountId(account);
         op.setOperationTypeId(dto.getOperationTypeId().getCode());
         entity.setOp(op);
         return entity;
