@@ -26,7 +26,7 @@ To run sonnar you must alter sonar-project.properties and run.
 ```sh
 $ sonar-scanner
 ```
-### Docker 
+### Dockergit sta 
 ```sh
 docker build --pull --rm -f "Dockerfile" -t interviewp:latest "."
 docker run -d --name interview  -p 8088:8088 interviewp
