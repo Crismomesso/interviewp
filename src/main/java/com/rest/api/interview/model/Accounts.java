@@ -20,6 +20,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "accounts", uniqueConstraints = { @UniqueConstraint(columnNames = { "documentNumber" }) })
 public class Accounts {
 
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long accountId;

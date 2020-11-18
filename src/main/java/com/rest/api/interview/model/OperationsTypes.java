@@ -22,7 +22,7 @@ public class OperationsTypes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long operationTypeId;
-
+    
     @NotNull
     @NotBlank
     private String description;
