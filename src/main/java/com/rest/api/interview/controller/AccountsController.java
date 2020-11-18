@@ -29,6 +29,12 @@ public class AccountsController {
         this.accountsServices = accountsServices;
     }
 
+    
+    /** 
+     * @param dto
+     * @return AccountDTO
+     * @throws ConstraintsViolationException
+     */
     @PostMapping
     @ApiOperation(value = "Insert account")
     @ResponseStatus(HttpStatus.CREATED)
@@ -37,6 +43,12 @@ public class AccountsController {
         return accountsServices.create(dto);
     }
 
+    
+    /** 
+     * @param accountId
+     * @return AccountDTO
+     * @throws EntityNotFoundException
+     */
     @GetMapping("/{accountId}")
     @ApiOperation(value = "Find account by id")
     @ResponseStatus(HttpStatus.OK)

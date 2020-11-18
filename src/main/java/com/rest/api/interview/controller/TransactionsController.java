@@ -26,6 +26,11 @@ public class TransactionsController {
         this.service = service;
     }
 
+    
+    /** 
+     * @param dto
+     * @throws ConstraintsViolationException
+     */
     @PostMapping
     @ApiOperation(value = "Insert transaction")
     @ResponseStatus(HttpStatus.CREATED)
